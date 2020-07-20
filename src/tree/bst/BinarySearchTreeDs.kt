@@ -3,7 +3,7 @@ package tree.bst
 import common.DoubleNode
 import tree.bt.BinaryTreeDs
 
-class BinarySearchTreeDs : BinaryTreeDs() {
+open class BinarySearchTreeDs : BinaryTreeDs() {
 
     fun insert(data: Int) {
         root = insertBstHelper(root, data)

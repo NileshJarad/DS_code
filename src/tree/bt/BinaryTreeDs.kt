@@ -44,7 +44,14 @@ open class BinaryTreeDs(var root: DoubleNode? = null) {
             presentNode.right?.let {
                 queue.add(it)
             }
+        }
+    }
 
+    fun calculateHeight(rootNode: DoubleNode?): Int {
+        rootNode?.let {
+            return 1 + Math.max(calculateHeight(it.left), calculateHeight(it.right))
+        } ?: kotlin.run {
+            return -1
         }
     }
 }
@@ -86,5 +93,7 @@ fun main() {
     print("\tLevel-Order traversal : ")
     bt.levelOrderTraversal(bt.root)
 
+
+    print("\n\n Height of tree = ${bt.calculateHeight(bt.root)}")
 }
 
