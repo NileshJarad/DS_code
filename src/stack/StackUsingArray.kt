@@ -43,8 +43,16 @@ fun main() {
     stack.push(12)
     stack.push(15)
 
-    println("Popped element : " + stack.pop());
-    println("Peek element : " + stack.peek());
-    println("Popped element : " + stack.pop());
-    println("Popped element : " + stack.pop());
+    println("Popped element : " + stack.pop())
+    println("Peek element : " + stack.peek())
+    println("Popped element : " + stack.pop())
+    println("Popped element : " + stack.pop())
 }
+/****
+ *
+ * Popped element : 15
+ * Peek element : 12
+ * Popped element : 12
+ * Popped element : 6
+ *
+ * */
