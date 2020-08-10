@@ -1,4 +1,4 @@
-package strigns
+package strings
 
 /****
  * Given string reverse it.
